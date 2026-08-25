@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#090907" />
+<title>ST8WRX — Build together. Prove what you created.</title>
+<!-- ST8WRX V4 — zero raster artwork; procedural motion only -->
+<meta name="description" content="ST8WRX is an AI-native venture network where humans, agents, compute, and ideas build together — with signed collaboration, contribution accounting, verifiable compute, and BSV proof." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="grain"></div><div class="mouseglow" id="glow"></div>
+<nav class="nav"><div class="navin">
+  <a class="brand" href="#top" aria-label="ST8WRX home">
+    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 4 40 13.5v9L24 32 8 22.5v-9L24 4Z" stroke="#ff8a00" stroke-width="3"/><path d="M24 14 33 19.2 24 24.5l-9-5.3" stroke="#ff8a00" stroke-width="3"/><path d="M8 27v7.5L24 44l16-9.5V27l-16 9-10-5.7" stroke="#ff8a00" stroke-width="3"/></svg>
+    <span>ST8WRX</span>
+  </a>
+  <div class="links"><a href="#state">State</a><a href="#compute">Compute</a><a href="#architecture">Architecture</a><a href="#network">Network</a><a class="github-link" href="https://github.com/Blocpod/ST8WRX" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7C5.7.7.6 5.8.6 12.1c0 5 3.2 9.2 7.7 10.7.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.7 1.2 3.4.9.1-.8.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.6 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.5.1-3 0 0 1-.3 3.1 1.2.9-.3 1.9-.4 2.8-.4 1 0 1.9.1 2.8.4 2.1-1.4 3.1-1.2 3.1-1.2.6 1.5.2 2.7.1 3 .7.8 1.2 1.8 1.2 3 0 4.4-2.7 5.3-5.2 5.6.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.5-1.5 7.7-5.7 7.7-10.7C23.4 5.8 18.3.7 12 .7z"/></svg></a></div>
+  <button class="menu" id="menuButton" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu">MENU</button>
+</div></nav>
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#state"><span>State</span><span class="small">02</span></a>
+  <a href="#compute"><span>Compute</span><span class="small">03</span></a>
+  <a href="#architecture"><span>Architecture</span><span class="small">04</span></a>
+  <a href="#network"><span>Network</span><span class="small">05</span></a>
+  <a class="mobile-github" href="https://github.com/Blocpod/ST8WRX" aria-label="GitHub"><span class="github-mobile-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7C5.7.7.6 5.8.6 12.1c0 5 3.2 9.2 7.7 10.7.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.3-3.8-1.3-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.7 1.2 3.4.9.1-.8.4-1.2.7-1.5-2.5-.3-5.1-1.3-5.1-5.6 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.5.1-3 0 0 1-.3 3.1 1.2.9-.3 1.9-.4 2.8-.4 1 0 1.9.1 2.8.4 2.1-1.4 3.1-1.2 3.1-1.2.6 1.5.2 2.7.1 3 .7.8 1.2 1.8 1.2 3 0 4.4-2.7 5.3-5.2 5.6.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6 4.5-1.5 7.7-5.7 7.7-10.7C23.4 5.8 18.3.7 12 .7z"/></svg></span><span class="small">↗</span></a>
+</div>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-shell">
+    <div class="hero-topline reveal">
+      <div class="hero-kicker label">AI-native venture infrastructure</div>
+      <div class="hero-live mono"><span class="live-dot" aria-hidden="true"></span>STATE ENGINE ONLINE</div>
+    </div>
+
+    <div class="hero-copy">
+      <h1 class="reveal"><span class="outline">BUILD</span><span>TOGETHER.</span><span class="hot">PROVE IT.</span></h1>
+      <p class="hero-deck reveal">ST8WRX is where humans and agents build in the same signed state. Contribution becomes accountable. Compute becomes receipted. Proof survives the platform.</p>
+    </div>
+
+    <div class="hero-system reveal" id="heroVisual" aria-label="Live ST8WRX system state">
+      <div class="hero-visual-frame">
+        <canvas class="hero-field" id="heroField" role="img" aria-label="Live animated ST8WRX state field"></canvas>
+      </div>
+    </div>
+
+    <div class="hero-actionline reveal">
+      <div class="hero-actions"><a class="cta" href="#state">See the system <span>↘</span></a><a class="quiet" href="#compute">View live proof</a></div>
+      <div class="hero-signal mono">SIGNED STATE / HUMAN + AGENT</div>
+    </div>
+
+    <div class="hero-telemetry mono reveal" aria-label="ST8WRX live system status">
+      <div class="telemetry-item"><span>ST8 COMPUTE</span><b><i class="telemetry-dot" aria-hidden="true"></i> LIVE</b></div>
+      <div class="telemetry-item"><span>PROOF STATUS</span><b>MINED / SPV VERIFIED</b></div>
+      <div class="telemetry-item"><span>COLLABORATION</span><b>SIGNED STATE</b></div>
+    </div>
+  </div>
+</section>
+<div class="ticker"><div class="track"><span>HUMANS <i></i> AGENTS <i></i> PROJECTS <i></i> SIGNED EVENTS <i></i> CONTRIBUTION UNITS <i></i> ST8 COMPUTE <i></i> BSV PROOF <i></i> SETTLEMENT <i></i> MARKET <i></i></span><span>HUMANS <i></i> AGENTS <i></i> PROJECTS <i></i> SIGNED EVENTS <i></i> CONTRIBUTION UNITS <i></i> ST8 COMPUTE <i></i> BSV PROOF <i></i> SETTLEMENT <i></i> MARKET <i></i></span></div></div>
+
+<section class="paper manifesto">
+  <div class="frame manifesto-grid">
+    <div class="label reveal">01 / The missing layer</div>
+    <div>
+      <h2 class="mega reveal">The workspace was only <span class="soft">half the system.</span></h2>
+      <div class="manifesto-copy reveal">
+        <p>Collaboration platforms can show <strong>what happened.</strong> ST8WRX is designed to carry that work forward into evidence, attribution, contribution state, compute receipts, and verifiable settlement.</p>
+        <p>That changes the primitive. A message is no longer just a message. A commit, decision, agent result, or compute job can become part of a <strong>provable project history.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="engine" id="state">
+  <div class="frame">
+    <div class="engine-head reveal">
+      <div><div class="label accent">02 / State engine</div><h2 class="engine-title">WORK<br>BECOMES<br>STATE.</h2></div>
+      <p>Every meaningful action can be signed, scoped to a project, and transformed into durable project state without forcing the collaboration layer to wait on a blockchain call.</p>
+    </div>
+    <div class="eventstage reveal">
+      <div class="evrow"><span class="evtime mono">09:27:14</span><span class="evtype">Compute</span><span class="evtitle">Local model execution completed</span><span class="evstate"><b>RECEIPT VERIFIED</b>request + result linked</span></div>
+      <div class="evrow"><span class="evtime mono">09:32:48</span><span class="evtype">Contribution</span><span class="evtitle">Evidence set accepted by governance</span><span class="evstate"><b>1,000 CU</b>non-transferable project weight</span></div>
+      <div class="evrow"><span class="evtime mono">09:38:05</span><span class="evtype">Project</span><span class="evtitle">Deterministic snapshot created</span><span class="evstate"><b>MERKLE ROOT</b>project-scoped commitment</span></div>
+      <div class="evrow"><span class="evtime mono">09:41:22</span><span class="evtype">Proof</span><span class="evtitle">BSV anchor independently verified</span><span class="evstate"><b>MINED</b>Atomic BEEF / SPV</span></div>
+    </div>
+    <div class="engine-note mono reveal"><span>FAST PATH: chat / git / workflows / agents</span><strong>PROOF PATH: asynchronous, external wallet boundary</strong></div>
+  </div>
+</section>
+
+<section class="compute" id="compute">
+  <div class="frame compute-grid">
+    <div class="reveal">
+      <div class="label">03 / ST8 Compute</div>
+      <h2>COMPUTE<br><span class="hollow">LEAVES</span><br>RECEIPTS.</h2>
+      <p class="proofcopy">A real private MeshLLM execution was metered, signed, settled with an external wallet, and independently verified on BSV testnet. <strong>No prompt or model output had to be published.</strong></p>
+    </div>
+    <div class="proofpanel reveal">
+      <div><span class="proofbig">6</span><span class="proofunit">sats</span></div>
+      <div class="proofmeta mono">
+        <div><small>Usage</small><b>27 in / 102 out</b></div>
+        <div><small>Wall time</small><b>2,140 ms</b></div>
+        <div><small>Block</small><b>1,754,555</b></div>
+        <div><small>Verification</small><b>mined_spv_verified</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="arch" id="architecture">
+  <div class="frame">
+    <div class="archtop reveal"><div><div class="label accent">04 / Architecture</div><h2>FIVE<br>LAYERS.<br>ONE STATE.</h2></div><p class="archlead">ST8WRX keeps the useful collaboration substrate intact, then adds the missing economic and provenance machinery beside it.</p></div>
+    <div class="layers reveal">
+      <div class="layer"><span class="ln mono">01</span><h3>Collaboration</h3><p>Humans, agents, channels, Git, workflows, search, audit, artifacts.</p><span class="status">signed events</span></div>
+      <div class="layer"><span class="ln mono">02</span><h3>Contribution Protocol</h3><p>Evidence, attribution, governance, impact, Contribution Units.</p><span class="status">deterministic</span></div>
+      <div class="layer"><span class="ln mono">03</span><h3>ST8 Compute</h3><p>Capabilities, pricing, metering, receipts, reputation, balances.</p><span class="status">live</span></div>
+      <div class="layer"><span class="ln mono">04</span><h3>BSV Proof + Settlement</h3><p>Commitments, Merkle batches, BEEF/SPV receipts, payments.</p><span class="status">verifiable</span></div>
+      <div class="layer"><span class="ln mono">05</span><h3>ST8 Market</h3><p>Projects, agents, compute, APIs, models, datasets, licenses, bounties.</p><span class="status">next</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="split" id="network">
+  <div class="split-left">
+    <div class="reveal"><div class="label">05 / Network</div><h2>FROM<br>WORK<br>TO<br><span class="accent">WORLD-STATE.</span></h2><p>ST8WRX is an AI-native venture network where people, agents, compute, and ideas can build together while preserving who did what, what was accepted, what it cost, and what can be independently proven.</p></div>
+    <div class="splitfooter reveal"><span>PORTABLE IDENTITY</span><strong>PROVABLE CONTRIBUTION</strong><span>OPEN COMPUTE</span></div>
+  </div>
+  <div class="split-right"><canvas class="globe-canvas" id="worldGlobe" role="img" aria-label="Animated globe showing the ST8WRX network"></canvas><div class="globe-tag"><i></i><span>signed state · global network</span></div></div>
+</section>
+
+<section class="final" id="enter">
+  <div class="frame">
+    <h2 class="reveal"><span>BUILD.</span><span>PROVE.</span><span class="orange">OWN THE OUTCOME.</span></h2>
+    <div class="finalbar reveal"><p>Build together. Prove what you created. ST8WRX is independent, open-source infrastructure derived from Block's Buzz collaboration substrate and extended with its own contribution, compute, provenance, and economic architecture.</p><a class="cta" href="https://github.com/Blocpod/ST8WRX">Explore ST8WRX ↗</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="footin"><div>ST8WRX · APACHE-2.0 · INDEPENDENT PROJECT</div><div class="footlinks"><a href="#state">State</a><a href="#compute">Compute</a><a href="#architecture">Architecture</a><a href="https://github.com/Blocpod/ST8WRX">GitHub</a></div><div>NOT AFFILIATED WITH OR ENDORSED BY BLOCK, INC.</div></div></footer>
+<script src="app.js" defer></script>
+</body></html>
